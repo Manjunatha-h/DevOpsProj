@@ -26,10 +26,10 @@ public class EmailGenService {
         this.webClient = webClientBuilder.build();
     }
 
-    @Value("${gemini.api.url}")
+    @Value("${spring.api.url}")
     private String geminiApiUrl;
 
-    @Value("${gemini.api.key}")
+    @Value("${spring.api.key}")
     private String geminiApiKey;
 
     public String generateEmailReply(EmailRequest emailRequest) {
